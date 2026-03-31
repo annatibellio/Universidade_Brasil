@@ -9,9 +9,9 @@
     <title>Construção de Websites</title>
 </head>
 <body>
-    <header><img src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
-    <nav>
-        <ul>
+    <header class="flex-container" id="topo"><img id="logo" src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
+    <nav class="flex-container">
+        <ul id="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentarios.html">Comentários</a></li>
             <li><a href="layout.html">Layout</a></li>
@@ -24,7 +24,7 @@
             <li><a href="metadados.html">Metadados</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="flex-container" id="conteudo">
         <h1>METADADOS</h1>
     <p>Metadados são dados externos à página que são usados ​​pelos navegadores 
         (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) 
@@ -32,9 +32,10 @@
     <p>Eles são integrados à página HTML pela tag &lt;meta&gt;</p>
     <p>O elemento <meta> é usado para especificar qual conjunto de caracteres é usado, 
         descrição da página, palavras-chave, autor e outros metadados.</p>
-       <img src="imagem/metadados.png"alt="imagem que lustra a aplicação de metadados em HTML">
+       <img id="imgconteudo" src="imagem/metadados.png"alt="imagem que lustra a aplicação de metadados em HTML">
     </main>
-    <footer></footer>
+    <footer class="flex-container" id="rodape">
     <o>Todos os direitos reservados &copy; 2026</o>
+    </footer>
 </body>
 </html>
