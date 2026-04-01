@@ -34,6 +34,8 @@ nav {
     position: relative;
     padding: 20px, 30px;
 }
+
+/*link do menu*/
 #menu li a{
     color: #fff;
     text-decoration: none;
@@ -44,6 +46,7 @@ nav {
     text-decoration: underline;
     transition: 0.5s;
 }
+
 /*ocultar submenu*/
 #menu li ul {
     display: none;
