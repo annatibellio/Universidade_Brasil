@@ -26,13 +26,13 @@ nav {
     justify-content: center;
 }
 #menu {
-    list-style-type: none;
+    list-style: none;
     display: inline-flex;
     justify-content: space-around;
 }
 #menu li {
     position: relative;
-    padding: 20px, 30px;
+    padding: 20px 30px;
 }
 
 /*link do menu*/
@@ -42,13 +42,13 @@ nav {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-#menu li a:hover {
+#menu li a:hover{
     text-decoration: underline;
     transition: 0.5s;
 }
 
 /*ocultar submenu*/
-#menu li ul {
+#menu li ul{
     display: none;
     position: absolute;
     top: 40px;
@@ -70,7 +70,18 @@ nav {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    padding: 3%;
+    padding: 3% auto;
+}
+
+section{
+    padding: 2% 10%;
+}
+
+#imgindex{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 #imgconteudo{
     width: 40%;
