@@ -102,3 +102,18 @@ h1 {
     font-size: 0.7em;
     height: 90px;
 }
+form{
+    width: 90%;
+    margin: 5% auto;
+    text-align: left;
+}
+input, label, textarea{
+    display: block;
+    margin-bottom: 10px;
+}
+input, textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
