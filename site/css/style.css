@@ -117,3 +117,12 @@ input, textarea{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+button{
+    padding: 10px 20px;
+    background-color: #00187a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
