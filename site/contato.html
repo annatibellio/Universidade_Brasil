@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+        <header class="flex-container" id="topo"><img id="logo" src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
+        <nav class="flex-container">
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista Não Ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    
     <header class="flex-container" id="topo"><img id="logo" src="imagem/logo_ub.png" alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
     <main class="flex-container" id="conteudo">
     <section>
@@ -34,8 +51,7 @@
             <fieldset>
                 <legend>Endereço</legend>
                 <label for="cep" class="required">CEP</label>
-                <input type="text" name="cep" id="cep" placeholder="Digite seu
-                cep" required>
+                <input type="text" name="cep" id="cep" placeholder="Digite seu cep" required>
                 <label for="rua">Rua</label>
                 <input type="text" name="rua" id="rua" disabled>
                 <label for="numero" class="required">Número</label>
@@ -52,11 +68,9 @@
             <fieldset>
                 <legend>Mensagem</legend>
                 <label for="assunto" class="required">Assunto</label>
-                <input type="text" name="assunto" id="assunto" placeholder="Digite o
-                assunto da mensagem" required>
+                <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto da mensagem" required>
                 <label for="mensagem" class="required">Mensagem</label>
-                <input type="text" name="mensagem" id="mensagem" placeholder="Digite a sua
-                mensagem aqui..." required>             
+                <input type="text" name="mensagem" id="mensagem" placeholder="Digite a sua mensagem aqui..." required>             
             </fieldset>
         </form>
     </section>
