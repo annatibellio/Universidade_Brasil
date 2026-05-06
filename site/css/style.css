@@ -148,4 +148,18 @@ video{
         display: block;
         margin: 2%;
     }
+    #bt_menu:checked ~#menu{
+        display: block;
+        margin: 2%;
+    }
+    #menu li{
+        padding: 5% 1px;
+    }
+    #menu li ul{
+        position: static;
+    }
+    #menu li ul li{
+        position: relative;
+        display: block;
+    }
 }
