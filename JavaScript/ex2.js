@@ -26,3 +26,5 @@ function validar(){
     }
     return true
 }
+
+function verificarOpcao()
