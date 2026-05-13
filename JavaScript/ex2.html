@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="ex2.js"></script>
 </head>
 <body>
-    <form name="contato" id="contato">
+    <form name="contato" id="contato" onsubmit="return validar()">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome"><br>
         <label for="email">Email:</label>
         <input type="email" name="name" id="email"><br>
         <label for="assunto">Assunto:</label>
         <select name="assunto" id="assunto">
+            <option value="" selected>Selecione uma opção</option>
             <option value="duvida">Dúvida</option>
             <option value="sugestao">Sugestão</option>
             <option value="reclamacao">Reclamação</option>
