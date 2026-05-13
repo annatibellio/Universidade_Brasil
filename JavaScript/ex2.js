@@ -27,4 +27,14 @@ function validar(){
     return true
 }
 
-function verificarOpcao()
+function verificarOpcao(){
+    let assunto = document.getElementById("assunto").value;
+    let oculta = document.getElementById("oculta");
+
+    if(assunto === "outro"){
+        oculta.style.display = "block";
+    }
+    else{
+        oculta.style.display = "none"
+    }
+}
