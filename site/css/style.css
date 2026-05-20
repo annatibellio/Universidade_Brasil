@@ -131,6 +131,10 @@ button{
     cursor: pointer;
     margin-top: 5px;
 }
+.required::after{
+    content: " *";
+    color: red;
+}
 video{
     width: 70%;
     height: auto;
