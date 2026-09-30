@@ -1,20 +1,31 @@
 <?php
-    include 'conexao.php';
-    $email = $conexao->real_escape_string($_POST['email']);
-    $senha = sha1($_POST['senha']);
+      session_start();
+      require "conexao.php";
+      $email = $_POST['email'];
+      $senha = $_POST['senha'];
 
-    $sql_select = "SELECT nome, email FROM table1 WHERE email='$email' and senha='$senha'";
-    $resultado = $conexao->query($sql_select);
+      $sql = "SELECT id, nome, email, senha from table1 where email=?";
+      $stmt = $conexao->prepare($sql);
+      $stmt->bind_param("s", $email);
+      $stmt->execute();
 
-    if($resultado->num_rows > 0){
-        $row = $resultado->fetch_assoc();
-        // Correção aplicada aqui: removemos as aspas internas ou usamos concatenação
-        echo "<p>Olá, " . $row['nome'] . "! Seu e-mail é " . $row['email'] . "</p>";
-        
-    } else {
-        echo "<p>Nenhum usuário encontrado</p>";
-    }
-    
-    // O close() foi movido para fora do if/else para fechar a conexão sempre
-    $conexao->close();
-?>
+      $resultado = $stmt->get_result();
+
+      if ($usuario = $resultado->fetch_assoc()){
+
+        if(password_verify($senha, $usuario['senha'])){
+            $_SESSION['email'] = $usuario['email'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+
+            header("Location: painel.php");
+            exit;
+        }else{
+            echo "Senha incorreta";
+        }
+      } else{
+        echo 'E-mail incorreto';
+      }
+    $stmt->close();
+    $stmt->close();
+    ?>
